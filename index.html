@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756835229788588" crossorigin="anonymous"></script>
+    <!-- these ads are just to make people get a ad blocker :D -->
+    <!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756835229788588" crossorigin="anonymous"></script> Removed during testing -->
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Echo's personal site</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind -->
+    <link rel="preload" href="https://cdn.tailwindcss.com/3.3.3" as="script" />
+    <script src="https://cdn.tailwindcss.com/3.3.3"></script>
+
+    <!-- backup styles -->
+    <link rel="preload" href="/css/index.css" as="style" />
+    <link rel="stylesheet" href="/css/index.css" />
   </head>
   <body class="bg-gray-900 text-white">
     <header class="py-4 px-8 flex justify-between items-center">
@@ -16,17 +25,17 @@
       <div class="ml-4">
         <div class="flex">
           <div class="p-3">
-            <a rel="me" href="https://defcon.social/@3kh0" class="text-white ">
+            <a rel="me" href="https://defcon.social/@3kh0" class="text-white">
               <img class="w-14 h-14 hover:text-green-500 transition duration-300" src="img/mastodon.png" alt="Mastodon" />
             </a>
           </div>
           <div class="p-3">
-            <a href="https://github.com/3kh0" class="text-white ">
+            <a href="https://github.com/3kh0" class="text-white">
               <img class="w-14 h-14 hover:w-16 hover:h-16 transition duration-700" src="img/github.png" alt="Mastodon" />
             </a>
           </div>
           <div class="p-3">
-            <a href="https://discord.gg/Kp5xG9s79N" class="text-white ">
+            <a href="https://discord.gg/Kp5xG9s79N" class="text-white">
               <img class="w-14 h-14 hover:text-green-500 transition duration-300" src="img/discord.png" alt="Discord" />
             </a>
           </div>
@@ -51,37 +60,37 @@
     <section class="max-w-4xl mx-auto py-8 px-8">
       <h2 class="text-3xl mb-4">Cool stuff I made</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        <a href="https://github.com/3kh0/website-v4/">
+        <a referrerpolicy="no-referrer" href="https://github.com/3kh0/website-v4/">
           <div class="bg-gray-700 p-4 rounded-xl hover:bg-gray-800 transition duration-300">
             <h3 class="text-xl font-semibold mb-2">3kh0 website</h3>
             <p class="text-sm">Vastly popular website with games</p>
           </div>
         </a>
-        <a href="https://github.com/3kh0/ChessSword">
+        <a referrerpolicy="no-referrer" href="https://github.com/3kh0/ChessSword">
           <div class="bg-gray-700 p-4 rounded-xl hover:bg-gray-800 transition duration-300">
             <h3 class="text-xl font-semibold mb-2">Chess Sword</h3>
             <p class="text-sm">Chess bot to highlight the best moves</p>
           </div>
         </a>
-        <a href="https://github.com/3kh0/3kh0-Assets">
+        <a referrerpolicy="no-referrer" href="https://github.com/3kh0/3kh0-Assets">
           <div class="bg-gray-700 p-4 rounded-xl hover:bg-gray-800 transition duration-300">
             <h3 class="text-xl font-semibold mb-2">3kh0 Assets</h3>
             <p class="text-sm">Tons of game files for free use</p>
           </div>
         </a>
-        <a href="https://github.com/3kh0/soundboard">
+        <a referrerpolicy="no-referrer" href="https://github.com/3kh0/soundboard">
           <div class="bg-gray-700 p-4 rounded-xl hover:bg-gray-800 transition duration-300">
             <h3 class="text-xl font-semibold mb-2">Soundboard</h3>
             <p class="text-sm">Simple online soundboard app</p>
           </div>
         </a>
-        <a href="https://github.com/3kh0/gamejamsnake">
+        <a referrerpolicy="no-referrer" href="https://github.com/3kh0/gamejamsnake">
           <div class="bg-gray-700 p-4 rounded-xl hover:bg-gray-800 transition duration-300">
             <h3 class="text-xl font-semibold mb-2">Arcade Snake</h3>
             <p class="text-sm">Simple version of snake for the web</p>
           </div>
         </a>
-        <a href="https://github.com/3kh0/echodown">
+        <a referrerpolicy="no-referrer" href="https://github.com/3kh0/echodown">
           <div class="bg-gray-700 p-4 rounded-xl hover:bg-gray-800 transition duration-300">
             <h3 class="text-xl font-semibold mb-2">Echo Down</h3>
             <p class="text-sm">A fake DDoS/Network stresser</p>
@@ -100,23 +109,17 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         <div>
           <a href="mailto:echo-the-coder@tuta.io">
-            <button class="bg-green-500 text-white py-2 px-4 rounded-xl hover:bg-green-600 transition duration-300 w-full">
-              Email
-            </button>
+            <button class="bg-green-500 text-white py-2 px-4 rounded-xl hover:bg-green-600 transition duration-300 w-full">Email</button>
           </a>
         </div>
         <div>
-          <a href="https://discord.com/users/1056383394470182922">
-            <button class="bg-blue-600 text-white py-2 px-4 rounded-xl hover:bg-blue-700 transition duration-300 w-full">
-              Discord
-            </button>
+          <a referrerpolicy="no-referrer" href="https://discord.com/users/1056383394470182922">
+            <button class="bg-blue-600 text-white py-2 px-4 rounded-xl hover:bg-blue-700 transition duration-300 w-full">Discord</button>
           </a>
         </div>
         <div>
-          <a href="https://defcon.social/@3kh0">
-            <button class="bg-purple-500 text-white py-2 px-4 rounded-xl hover:bg-purple-600 transition duration-300 w-full">
-              Mastodon
-            </button>
+          <a rel="me" href="https://defcon.social/@3kh0">
+            <button class="bg-purple-500 text-white py-2 px-4 rounded-xl hover:bg-purple-600 transition duration-300 w-full">Mastodon</button>
           </a>
         </div>
       </div>
@@ -124,6 +127,21 @@
     <section class="max-w-4xl mx-auto py-8 px-8">
       <p class="text-center text-m">Made by 3kh0 with Tailwind</p>
     </section>
-    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d18971d01aa945dcba437fb634f4f1a5"}'></script><!-- End Cloudflare Web Analytics -->
+
+    <div id="ftf-dma-note" class="ftf-dma-note fixed bottom-4 left-4 right-4 bg-gray-800 text-white p-4 text-left rounded-lg shadow-lg" style="z-index: 9999;">
+      <span onclick="closeNotice()" id="ftf-dma-close-btn" class="ftf-dma-close-btn absolute top-2 right-2 cursor-pointer text-gray-400 hover:text-gray-200">Close</span>
+      <div class="ftf-dma-note-content">
+        <p class="text-xl font-semibold">Ad-blocker not detected!</p>
+        <p class="text-lg">
+          I strongly suggest that you consider installing a browser extension like
+          <a href="https://ublockorigin.com/" target="_blank" referrerpolicy="no-referrer" class="underline text-blue-500 hover:text-blue-700">uBlock Origin</a>
+          that blocks ads and other malicious scripts in your browser to protect your privacy and security.
+        </p>
+      </div>
+    </div>
+
+    <!-- Cloudflare Web Analytics -->
+    <!--<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "d18971d01aa945dcba437fb634f4f1a5"}'></script> Removed during testing -->
+    <script src="/scripts/adblockNotice.js"></script>
   </body>
 </html>
