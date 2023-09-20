@@ -8,3 +8,4 @@ function closeNotice() {
     notice.style.display = 'none';
   }, 500); // Hide notice after animation completes (300ms)
 }
+// TODO: store this to localstorage so it doesn't show again if the user clicks on close
