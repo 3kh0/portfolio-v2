@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="scripts/pageStartup.js"></script>
     <!-- these ads are just to make people get a ad blocker :D -->
     <!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756835229788588" crossorigin="anonymous"></script> Removed during testing -->
 
@@ -35,6 +36,9 @@
     <meta property="og:site_name" content="Echo's Site" />
   </head>
   <body class="bg-gray-900 text-white">
+    <div id="loader" class="fixed top-0 left-0 w-screen h-screen flex justify-center items-center bg-white z-50">
+      <div class="animate-spin rounded-full h-32 w-32"></div>
+    </div>
     <header class="py-4 px-8 flex justify-between items-center">
       <div>
         <h1 class="text-6xl font-bold text-green-500 text-center py-1">3kh0</h1>
@@ -44,17 +48,17 @@
         <div class="flex">
           <div class="p-3">
             <a rel="me" href="https://defcon.social/@3kh0" class="text-white">
-              <img class="w-14 h-14 hover:text-green-500 transition duration-300" src="img/mastodon.png" alt="Mastodon" />
+              <img class="w-14 h-14" src="img/mastodon.png" alt="Mastodon" />
             </a>
           </div>
           <div class="p-3">
             <a href="https://github.com/3kh0" class="text-white">
-              <img class="w-14 h-14 hover:w-16 hover:h-16 transition duration-700" src="img/github.png" alt="Mastodon" />
+              <img class="w-14 h-14 " src="img/github.png" alt="Mastodon" />
             </a>
           </div>
           <div class="p-3">
             <a href="https://discord.gg/Kp5xG9s79N" class="text-white">
-              <img class="w-14 h-14 hover:text-green-500 transition duration-300" src="img/discord.png" alt="Discord" />
+              <img class="w-14 h-14" src="img/discord.png" alt="Discord" />
             </a>
           </div>
         </div>
@@ -158,7 +162,6 @@
     <section class="max-w-4xl mx-auto py-8 px-8">
       <p class="text-center text-m">Made by 3kh0 with Tailwind</p>
     </section>
-
     <div
       id="ftf-dma-note"
       class="ftf-dma-note d-none ad native-ad native-ad-1 ytd-j yxd-j yxd-jd aff-content-col aff-inner-col aff-item-list ark-ad-message inplayer-ad inplayer_banners in_stream_banner trafficjunky-float-right dbanner preroll-blocker happy-inside-player blocker-notice blocker-overlay exo-horizontal ave-pl bottom-hor-block brs-block advboxemb wgAdBlockMessage glx-watermark-container overlay-advertising-new header-menu-bottom-ads rkads mdp-deblocker-wrapper amp-ad-inner imggif bloc-pub bloc-pub2 hor_banner aan_fake aan_fake__video-units rps_player_ads fints-block__row full-ave-pl full-bns-block vertbars video-brs player-bns-block wps-player__happy-inside gallery-bns-bl stream-item-widget adsbyrunactive happy-under-player adde_modal_detector adde_modal-overlay ninja-recommend-block aoa_overlay message ftf-dma-note fixed bottom-4 left-4 right-4 bg-red-900 text-white p-4 text-left rounded-lg shadow-lg"

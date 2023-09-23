@@ -1,3 +1,23 @@
+/* full screen loader */
+#loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(17, 24, 39, 1); /* You can adjust the background color and opacity */
+}
+
+/* Center the spinner */
+.animate-spin {
+  animation: spin 0.75s linear infinite;
+  border-width: 7px; /* Adjust the border width to make the spinner thicker */
+  border-color: rgb(34, 197, 94) transparent rgb(34, 197, 94) transparent; /* You can adjust the color here */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 /* wow animations!!! */
 
 @keyframes slide-down {
