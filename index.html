@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>#loader {display: flex;justify-content: center;align-items: center;background-color: rgba(17, 24, 39, 1);}.animate-spin {animation: spin 0.75s linear infinite;border-width: 7px;border-color: rgb(34, 197, 94) transparent rgb(34, 197, 94) transparent;} @keyframes spin {0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}</style>
     <script src="scripts/pageStartup.js"></script>
     <!-- these ads are just to make people get a ad blocker :D -->
     <!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756835229788588" crossorigin="anonymous"></script> Removed during testing -->
@@ -9,12 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Echo's personal site</title>
 
-    <!-- Tailwind -->
-    <link rel="preload" href="https://cdn.tailwindcss.com/3.3.3" as="script" />
     <script src="https://cdn.tailwindcss.com/3.3.3"></script>
-
-    <!-- backup styles -->
-    <link rel="preload" href="/css/index.css" as="style" />
     <link rel="stylesheet" href="/css/index.css" />
 
     <!-- base meta tags -->
@@ -130,7 +126,7 @@
       <h2 class="text-3xl mb-4">Cool Art</h2>
       <div id="art-container" class="max-w-2xl mx-auto">
         <!-- Adjust the max-width as needed -->
-        <img id="art-image" class="max-w-md mx-auto mb-4 rounded-lg" alt="Artwork" />
+        <img id="art-image" class="max-w-md mx-auto mb-4 rounded-lg" alt="Artwork" loading="lazy"/>
         <p id="artist-name" class="text-lg font-semibold"></p>
         <p id="art-description" class="text-sm"></p>
         <div class="mt-4">
