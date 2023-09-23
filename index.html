@@ -118,8 +118,21 @@
     </section>
     <!-- blog -->
     <section class="max-w-4xl mx-auto py-8 px-8">
-      <h2 class="text-3xl mb-4">Blog posts</h2>
+      <h2 class="text-3xl mb-4">Blog Posts</h2>
       <p class="text-center text-lg">This is coming soon, so stay tuned!</p>
+    </section>
+    <!-- art -->
+    <section class="max-w-4xl mx-auto py-8 px-8 text-center">
+      <h2 class="text-3xl mb-4">Cool Art</h2>
+      <div id="art-container" class="max-w-2xl mx-auto">
+        <!-- Adjust the max-width as needed -->
+        <img id="art-image" class="max-w-md mx-auto mb-4 rounded-lg" alt="Artwork" />
+        <p id="artist-name" class="text-lg font-semibold"></p>
+        <p id="art-description" class="text-sm"></p>
+        <div class="mt-4">
+          <button id="next-button" class="bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition duration-300">Next</button>
+        </div>
+      </div>
     </section>
     <!-- contact -->
     <section class="max-w-4xl mx-auto py-8 px-8">
@@ -146,8 +159,14 @@
       <p class="text-center text-m">Made by 3kh0 with Tailwind</p>
     </section>
 
-    <div id="ftf-dma-note" class="ftf-dma-note d-none ad native-ad native-ad-1 ytd-j yxd-j yxd-jd aff-content-col aff-inner-col aff-item-list ark-ad-message inplayer-ad inplayer_banners in_stream_banner trafficjunky-float-right dbanner preroll-blocker happy-inside-player blocker-notice blocker-overlay exo-horizontal ave-pl bottom-hor-block brs-block advboxemb wgAdBlockMessage glx-watermark-container overlay-advertising-new header-menu-bottom-ads rkads mdp-deblocker-wrapper amp-ad-inner imggif bloc-pub bloc-pub2 hor_banner aan_fake aan_fake__video-units rps_player_ads fints-block__row full-ave-pl full-bns-block vertbars video-brs player-bns-block wps-player__happy-inside gallery-bns-bl stream-item-widget adsbyrunactive happy-under-player adde_modal_detector adde_modal-overlay ninja-recommend-block aoa_overlay message ftf-dma-note fixed bottom-4 left-4 right-4 bg-red-900 text-white p-4 text-left rounded-lg shadow-lg" style="z-index: 9999;">
-      <span onclick="closeNotice()" id="ftf-dma-close-btn" class="ftf-dma-close-btn bg-red-700 p-1 rounded-md absolute top-2 right-2 cursor-pointer text-gray-100 hover:bg-red-800 transition duration-300 hover:text-gray-300 ">Go away forever</span>
+    <div
+      id="ftf-dma-note"
+      class="ftf-dma-note d-none ad native-ad native-ad-1 ytd-j yxd-j yxd-jd aff-content-col aff-inner-col aff-item-list ark-ad-message inplayer-ad inplayer_banners in_stream_banner trafficjunky-float-right dbanner preroll-blocker happy-inside-player blocker-notice blocker-overlay exo-horizontal ave-pl bottom-hor-block brs-block advboxemb wgAdBlockMessage glx-watermark-container overlay-advertising-new header-menu-bottom-ads rkads mdp-deblocker-wrapper amp-ad-inner imggif bloc-pub bloc-pub2 hor_banner aan_fake aan_fake__video-units rps_player_ads fints-block__row full-ave-pl full-bns-block vertbars video-brs player-bns-block wps-player__happy-inside gallery-bns-bl stream-item-widget adsbyrunactive happy-under-player adde_modal_detector adde_modal-overlay ninja-recommend-block aoa_overlay message ftf-dma-note fixed bottom-4 left-4 right-4 bg-red-900 text-white p-4 text-left rounded-lg shadow-lg"
+      style="z-index: 9999;"
+    >
+      <span onclick="closeNotice()" id="ftf-dma-close-btn" class="ftf-dma-close-btn bg-red-700 p-1 rounded-md absolute top-2 right-2 cursor-pointer text-gray-100 hover:bg-red-800 transition duration-300 hover:text-gray-300">
+        Go away forever
+      </span>
       <div class="ftf-dma-note-content">
         <p class="text-xl font-semibold">Ad-blocker not detected!</p>
         <p class="text-lg">
@@ -161,6 +180,7 @@
     <!-- Cloudflare Web Analytics -->
     <!--<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "d18971d01aa945dcba437fb634f4f1a5"}'></script> Removed during testing -->
     <script src="/scripts/adblockNotice.js"></script>
+    <script src="/scripts/artDisplay.js"></script>
     <script async src="https://arc.io/widget.min.js#afcaYxGm"></script>
   </body>
 </html>
