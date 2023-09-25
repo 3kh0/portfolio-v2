@@ -4,6 +4,7 @@ let currentArtIndex = 0;
 // update art display
 function updateArtDisplay() {
   const art = artData[currentArtIndex];
+  document.getElementById("art-link").href = art.image;
   document.getElementById("art-image").src = art.image;
   document.getElementById("artist-name").textContent = art.artist;
   document.getElementById("art-description").textContent = art.description;
